@@ -14,11 +14,9 @@
         height: 500px;
         margin: 100px 0 0;
 
-        figure {
-            img {
+        img {
                 border-radius: 10px;
             }
-        }
 
         .portText {
             text-align: center;
@@ -26,7 +24,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            width: 80%;
 
             h4 {
                 font-size: 4rem;
@@ -34,6 +33,8 @@
 
             p {
                 text-align: left;
+                width: 80%;
+                margin: 0 auto;
             }
 
             ul {

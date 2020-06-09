@@ -1,7 +1,6 @@
 .skills {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 20px 60px;
-    // color: $accent;
     text-align: center;
 
     h3 {
@@ -19,7 +18,7 @@
 
     .flip-card {
         background-color: transparent;
-        width: 125px;
+        width: 200px;
         height: 125px;
         perspective: 1000px;
         margin: 10px auto;
@@ -56,6 +55,7 @@
                 color: $accent;
                 transform: rotateX(180deg);
                 padding-top: 40px;
+                line-height: 3rem;
             }
         }
     }

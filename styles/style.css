@@ -399,7 +399,7 @@ p {
 }
 
 .skills {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 20px 60px;
   text-align: center;
 }
@@ -422,7 +422,7 @@ p {
 
 .skills .flip-card {
   background-color: transparent;
-  width: 125px;
+  width: 200px;
   height: 125px;
   -webkit-perspective: 1000px;
           perspective: 1000px;
@@ -468,6 +468,7 @@ p {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
   padding-top: 40px;
+  line-height: 3rem;
 }
 
 .flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner {
@@ -498,7 +499,7 @@ p {
   margin: 100px 0 0;
 }
 
-.portfolio .portItem figure img {
+.portfolio .portItem img {
   border-radius: 10px;
 }
 
@@ -514,7 +515,8 @@ p {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  width: 80%;
 }
 
 .portfolio .portItem .portText h4 {
@@ -523,6 +525,8 @@ p {
 
 .portfolio .portItem .portText p {
   text-align: left;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .portfolio .portItem .portText ul {
@@ -581,7 +585,7 @@ p {
 }
 
 .contact ul a {
-  font-size: 5rem;
+  font-size: 8rem;
   color: white;
   padding: 10px 20px;
   -webkit-transition: 0.3s;
