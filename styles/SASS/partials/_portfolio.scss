@@ -32,6 +32,10 @@
                 font-size: 4rem;
             }
 
+            p {
+                text-align: left;
+            }
+
             ul {
                 display: flex;
                 justify-content: center;
@@ -42,10 +46,11 @@
 
                     a {
                         color: $second;
-                        transition: 0.2s;
+                        transition: 0.4s;
 
                         &:hover {
                             color: $primary;
+                            font-style: italic;
                         }
 
                         &:focus {

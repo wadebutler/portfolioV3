@@ -213,6 +213,14 @@ img {
   height: 100%;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .navbar {
   width: 300px;
   height: 50%;
@@ -314,6 +322,7 @@ img {
 .navbar .navList .navItem .navLink {
   color: white;
   font-size: 3rem;
+  font-family: 'Playfair Display', serif;
 }
 
 .change {
@@ -368,19 +377,19 @@ img {
 }
 
 .about p {
-  margin: 0 60px;
+  margin: 0 100px;
 }
 
 .about p a {
   color: #604f1c;
-  font-style: italic;
   font-weight: bold;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
 }
 
 .about p a:hover {
   color: #28123f;
+  font-style: italic;
 }
 
 .about p a:focus {
@@ -511,6 +520,10 @@ img {
   font-size: 4rem;
 }
 
+.portfolio .portItem .portText p {
+  text-align: left;
+}
+
 .portfolio .portItem .portText ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,12 +540,13 @@ img {
 
 .portfolio .portItem .portText ul li a {
   color: #604f1c;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .portfolio .portItem .portText ul li a:hover {
   color: #28123f;
+  font-style: italic;
 }
 
 .portfolio .portItem .portText ul li a:focus {
@@ -586,6 +600,6 @@ footer {
   padding: 25px;
 }
 
-footer p {
+footer h4 {
   font-size: 2rem;
 }

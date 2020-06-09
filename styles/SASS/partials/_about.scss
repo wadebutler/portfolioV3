@@ -10,16 +10,16 @@
     }
 
     p {
-        margin: 0 60px;
+        margin: 0 100px;
 
         a {
             color: $second;
-            font-style: italic;
             font-weight: bold;
-            transition: color 0.2s;
+            transition: color 0.4s;
 
             &:hover {
                 color: $primary;
+                font-style: italic;
             }
 
             &:focus {
