@@ -2,6 +2,7 @@
     font-size: 3rem;
     margin: 20px 60px;
     text-align: center;
+    color: $accent;
 
     h3 {
         text-align: center;
@@ -14,6 +15,41 @@
         grid-template-columns: 1fr 1fr 1fr;
         padding: 100px;
         grid-gap: 20px;
+    }
+
+    @media (max-width: 950px) {
+        margin: 20px 0;
+
+        ul {
+            grid-gap: 0;
+        }
+    }
+
+    @media (max-width: 850px) {
+        ul {
+            padding: 100px 50px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        ul {
+            padding: 100px 20px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        ul {
+            padding: 100px 10px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 450px) {
+        ul {
+            padding: 100px 0px;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
     }
 
     .flip-card {
@@ -39,8 +75,6 @@
             }
 
             .flip-card-front {
-                color: $accent;
-                background: $black;
 
                 i {
                     font-size: 10rem;
@@ -52,7 +86,6 @@
             }
 
             .flip-card-back {
-                color: $accent;
                 transform: rotateX(180deg);
                 padding-top: 40px;
                 line-height: 3rem;

@@ -332,7 +332,7 @@ p {
 }
 
 .header {
-  height: 100vh;
+  height: 99vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,6 +363,43 @@ p {
 
 .header h2 {
   font-size: 5rem;
+}
+
+@media (max-width: 650px) {
+  .header h1 {
+    font-size: 8rem;
+  }
+  .header h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 6rem;
+    padding: 10px;
+  }
+  .header h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .header h1 {
+    font-size: 5rem;
+  }
+  .header h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 316px) {
+  .header h1 {
+    font-size: 4rem;
+  }
+  .header h2 {
+    font-size: 2rem;
+  }
 }
 
 .about {
@@ -398,10 +435,29 @@ p {
   outline-offset: 7px;
 }
 
+@media (max-width: 750px) {
+  .about p {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .about p {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .about {
+    font-size: 1.5rem;
+  }
+}
+
 .skills {
   font-size: 3rem;
   margin: 20px 60px;
   text-align: center;
+  color: white;
 }
 
 .skills h3 {
@@ -418,6 +474,44 @@ p {
       grid-template-columns: 1fr 1fr 1fr;
   padding: 100px;
   grid-gap: 20px;
+}
+
+@media (max-width: 950px) {
+  .skills {
+    margin: 20px 0;
+  }
+  .skills ul {
+    grid-gap: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .skills ul {
+    padding: 100px 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  .skills ul {
+    padding: 100px 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .skills ul {
+    padding: 100px 10px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .skills ul {
+    padding: 100px 0px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
 }
 
 .skills .flip-card {
@@ -450,11 +544,6 @@ p {
           backface-visibility: hidden;
 }
 
-.skills .flip-card .flip-card-inner .flip-card-front {
-  color: white;
-  background: black;
-}
-
 .skills .flip-card .flip-card-inner .flip-card-front i {
   font-size: 10rem;
 }
@@ -464,7 +553,6 @@ p {
 }
 
 .skills .flip-card .flip-card-inner .flip-card-back {
-  color: white;
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
   padding-top: 40px;
@@ -478,6 +566,25 @@ p {
 
 .portfolio {
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 2000px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 50px;
+}
+
+@media (max-width: 1200px) {
+  .portfolio {
+    height: 2500px;
+    margin-left: 0px;
+  }
 }
 
 .portfolio h3 {
@@ -494,18 +601,31 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 100px 50px;
-  height: 500px;
-  margin: 100px 0 0;
+}
+
+@media (max-width: 1200px) {
+  .portfolio .portItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .portfolio .portItem img {
   border-radius: 10px;
+  width: 500px;
+}
+
+@media (max-width: 550px) {
+  .portfolio .portItem img {
+    width: 300px;
+  }
 }
 
 .portfolio .portItem .portText {
+  height: 350px;
   text-align: center;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -519,6 +639,14 @@ p {
   width: 80%;
 }
 
+@media (max-width: 1200px) {
+  .portfolio .portItem .portText {
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+  }
+}
+
 .portfolio .portItem .portText h4 {
   font-size: 4rem;
 }
@@ -527,6 +655,12 @@ p {
   text-align: left;
   width: 80%;
   margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .portfolio .portItem .portText p {
+    width: 95%;
+  }
 }
 
 .portfolio .portItem .portText ul {
@@ -543,10 +677,32 @@ p {
   padding: 0 20px;
 }
 
+@media (max-width: 750px) {
+  .portfolio .portItem .portText ul li {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .portfolio .portItem .portText ul li {
+    font-size: 1.2rem;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 350px) {
+  .portfolio .portItem .portText ul li {
+    font-size: 1rem;
+    padding: 0 3px;
+  }
+}
+
 .portfolio .portItem .portText ul li a {
   color: #604f1c;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  font-size: 2.5rem;
 }
 
 .portfolio .portItem .portText ul li a:hover {
@@ -565,7 +721,7 @@ p {
 
 .contact {
   color: white;
-  padding: 170px 0 80px;
+  padding-bottom: 40px;
 }
 
 .contact h3 {
@@ -582,6 +738,25 @@ p {
   width: 80%;
   margin: 0px auto;
   padding: 150px 0 80px;
+}
+
+@media (max-width: 550px) {
+  .contact ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+  }
 }
 
 .contact ul a {
