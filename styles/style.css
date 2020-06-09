@@ -156,7 +156,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
-.visuallyHidden:not(:focus):not(:active) {
+.hide:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -172,6 +172,22 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   font-size: 62.5%;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 3px dotted white;
+  outline-offset: 7px;
+}
+
+main {
+  background: black;
 }
 
 ul {
@@ -179,7 +195,7 @@ ul {
   padding: 0;
 }
 
-li {
+ul li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -203,7 +219,7 @@ img {
   background: #28123f;
   position: fixed;
   top: -250px;
-  right: -205px;
+  right: -210px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,6 +250,8 @@ img {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background: #28123f;
+  border: none;
 }
 
 .navbar .hamMenu .line {
@@ -263,15 +281,10 @@ img {
   position: relative;
 }
 
-.navbar .navList .navItem .navLink {
-  color: white;
-  font-size: 3rem;
-}
-
-.navbar .navList .navItem .navLink::before, .navbar .navList .navItem .navLink::after {
+.navbar .navList .navItem::before, .navbar .navList .navItem::after {
   content: "";
   width: 100%;
-  height: 2px;
+  height: 3px;
   background: #604f1c;
   position: absolute;
   left: 0;
@@ -281,21 +294,26 @@ img {
   transition: 0.5s;
 }
 
-.navbar .navList .navItem .navLink::before {
-  top: -4px;
+.navbar .navList .navItem::before {
+  top: -10px;
   -webkit-transform-origin: left;
           transform-origin: left;
 }
 
-.navbar .navList .navItem .navLink::after {
+.navbar .navList .navItem::after {
   bottom: -3px;
   -webkit-transform-origin: right;
           transform-origin: right;
 }
 
-.navbar .navList .navItem .navLink:hover::before, .navbar .navList .navItem .navLink:hover::after, .navbar .navList .navItem .navLink:focus::before, .navbar .navList .navItem .navLink:focus::after {
+.navbar .navList .navItem:hover::before, .navbar .navList .navItem:hover::after, .navbar .navList .navItem:focus::before, .navbar .navList .navItem:focus::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.navbar .navList .navItem .navLink {
+  color: white;
+  font-size: 3rem;
 }
 
 .change {
@@ -324,12 +342,125 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  line-height: 10rem;
 }
 
 .header h1 {
   font-size: 10rem;
+  padding: 20px;
+  border-bottom: 4px solid black;
 }
 
 .header h2 {
   font-size: 5rem;
+}
+
+.about {
+  font-size: 2rem;
+  color: white;
+  padding: 100px 0 200px;
+}
+
+.about h3 {
+  text-align: center;
+  padding: 60px;
+  font-size: 5rem;
+}
+
+.about p {
+  margin: 0 60px;
+}
+
+.about p a {
+  color: #604f1c;
+  font-style: italic;
+  font-weight: bold;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.about p a:hover {
+  color: #28123f;
+}
+
+.about p a:focus {
+  outline: 3px dotted white;
+  outline-offset: 7px;
+}
+
+.skills {
+  font-size: 2rem;
+  margin: 20px 60px;
+  color: white;
+  text-align: center;
+}
+
+.skills h3 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.skills ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 100px 0;
+}
+
+.skills .flip-card {
+  background-color: transparent;
+  width: 125px;
+  height: 125px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin: 10px auto;
+}
+
+.skills .flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.skills .flip-card .flip-card-inner .flip-card-front, .skills .flip-card .flip-card-inner .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.skills .flip-card .flip-card-inner .flip-card-front {
+  color: white;
+  background: black;
+}
+
+.skills .flip-card .flip-card-inner .flip-card-front i {
+  font-size: 10rem;
+}
+
+.skills .flip-card .flip-card-inner .flip-card-front img {
+  width: 100px;
+}
+
+.skills .flip-card .flip-card-inner .flip-card-back {
+  color: white;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  padding-top: 40px;
+}
+
+.flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner {
+  -webkit-transform: rotateX(180deg) translateZ(-20px);
+          transform: rotateX(180deg) translateZ(-20px);
 }

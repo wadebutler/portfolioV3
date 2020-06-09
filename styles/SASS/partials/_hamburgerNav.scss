@@ -4,7 +4,7 @@
     background: $primary;
     position: fixed;
     top: -250px;
-    right: -205px;
+    right: -210px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        background: $primary;
+        border: none;
 
         .line {
             width: 100%;
@@ -50,14 +52,10 @@
             margin: 20px;
             position: relative;
 
-            .navLink {
-                color: $accent;
-                font-size: 3rem;
-
-                &::before, &::after {
+            &::before, &::after {
                     content: "";
                     width: 100%;
-                    height: 2px;
+                    height: 3px;
                     background: $second;
                     position: absolute;
                     left: 0;
@@ -66,7 +64,7 @@
                 }
 
                 &::before {
-                    top: -4px;
+                    top: -10px;
                     transform-origin: left;
                 }
 
@@ -78,7 +76,10 @@
                 &:hover::before, &:hover::after, &:focus::before, &:focus::after {
                     transform: scaleX(1);
                 }
-                
+
+            .navLink {
+                color: $accent;
+                font-size: 3rem;                
             }
         }
     }

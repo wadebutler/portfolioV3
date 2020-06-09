@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wade Butler</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+    
 </head>
 <body>
     <header> 
         <nav class="navbar">
-            <div class="hamMenu">
+            <button class="hamMenu">
                 <div class="line line1"></div>
                 <div class="line line2"></div>
                 <div class="line line3"></div>
-            </div>
+            </button>
 
             <ul class="navList">
                 <li class="navItem">
@@ -40,28 +43,144 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="about">
             <h3 id="about">About Me</h3>
 
-            <p>Hi I'm Wade, a Front-End Developer based out of Toronto, recently graduated from the Juno College of Technology. I am passionate about creating applications that are accessible and aim to improve people's lives.</p>
+            <p>Hi I'm Wade, a Front-End Developer based out of Toronto, recently graduated from the Juno College of Technology Web Development Immersive Bootcamp. I am passionate about creating applications that are accessible and aim to improve people's lives.</p>
 
-            <p>My previous career as a Visual Effects Artist gives me experience with team work and team coordination, as well as problem solving.</p>
+            <p>My previous career as a Visual Effects Artist gives me experience with team coordination and problem solving. </p>
 
             <p>For more details, check out my <a href="Assets/WadeButlerResume.pdf">Resume</a>.</p>
         </section>
-        <section>
+        <section class="skills">
             <h3 id="skills">Skills</h3>
             <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>SASS</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>React</li>
-                <li>Jest</li>
-                <li>Git</li>
-                <li>Web Accessiblity</li>
-                <li>Responsive</li>
+                <li tabindex="0" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>HTML5</p>
+                        </div>
+                    </div>
+                </li>
+                <li tabindex="0" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>CSS3</p>
+                        </div>
+                    </div>
+                </li>
+                <li tabindex="0" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <figure><img src="./Assets/Jquery.png" alt="jquery logo"></figure>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>SCSS</p>
+                        </div>
+                    </div>
+                </li>
+                <li tabindex="0" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                </li>
+                <li tabindex="0" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <figure><img src="./Assets/Jquery.png" alt="jquery logo"></figure>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>jQuery</p>
+                        </div>
+                    </div>
+                </li>
+                <li tabindex="0" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>RESTful API</p>
+                        </div>
+                    </div>
+                </li>
+                <li tabindex="0" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>React</p>
+                        </div>
+                    </div>
+                </li>
+                <li tabindex="0" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <figure><img src="./assets/redux.png" alt=""></figure>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Redux</p>
+                        </div>
+                    </div>
+                </li>
+                <li tabindex="0" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Git Workflow</p>
+                        </div>
+                    </div>
+                </li>
+                <li tabindex="0" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="cib-jest"></i>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Jest</p>
+                        </div>
+                    </div>
+                </li>
+                <li tabindex="0" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-universal-access"></i>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Accessibility</p>
+                        </div>
+                    </div>
+                </li>
+                <li tabindex="0" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Responsive Design</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p></p>
+                </li>
+                <li>
+                    <p></p>
+                </li>
             </ul>
         </section>
         <section>

@@ -1,0 +1,31 @@
+.about {
+    font-size: 2rem;
+    color: $accent;
+    padding: 100px 0 200px;
+    
+    h3 {
+        text-align: center;
+        padding: 60px;
+        font-size: 5rem;
+    }
+
+    p {
+        margin: 0 60px;
+
+        a {
+            color: $second;
+            font-style: italic;
+            font-weight: bold;
+            transition: color 0.2s;
+
+            &:hover {
+                color: $primary;
+            }
+
+            &:focus {
+                outline: 3px dotted $accent;
+                outline-offset: 7px;
+            }
+        }
+    }
+}
