@@ -1,0 +1,90 @@
+.navbar {
+    width: 300px;
+    height: 50%;
+    background: $primary;
+    position: fixed;
+    top: -250px;
+    right: -205px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 25px;
+    transition: 0.5s;
+
+    .hamMenu {
+        width: 35px;
+        height: 30px;
+        position: fixed;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .line {
+            width: 100%;
+            height: 4px;
+            background: $second;
+            transition: 0.8s;
+        }
+
+        .change1 {
+            transform: rotateZ(-405deg) translate(-8px, 6px);
+        }
+
+        .change2 {
+            opacity: 0;
+        }
+
+        .change3 {
+            transform: rotateZ(405deg) translate(-8px, -6px);
+        }
+
+    }
+
+    .navList {
+        
+
+        .navItem {
+            margin: 20px;
+            position: relative;
+
+            .navLink {
+                color: $accent;
+                font-size: 3rem;
+
+                &::before, &::after {
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    background: $second;
+                    position: absolute;
+                    left: 0;
+                    transform: scaleX(0);
+                    transition: 0.5s;
+                }
+
+                &::before {
+                    top: -4px;
+                    transform-origin: left;
+                }
+
+                &::after {
+                    bottom: -3px;
+                    transform-origin: right;
+                }
+
+                &:hover::before, &:hover::after, &:focus::before, &:focus::after {
+                    transform: scaleX(1);
+                }
+                
+            }
+        }
+    }
+}
+
+.change {
+        top: 0;
+        right: 0;
+    }
