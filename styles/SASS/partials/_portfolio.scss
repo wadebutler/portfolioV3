@@ -1,0 +1,64 @@
+.portfolio {
+    color: $accent;
+
+    h3 {
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .portItem {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 100px 50px;
+        height: 500px;
+        margin: 100px 0 0;
+
+        figure {
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .portText {
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-size: 2rem;
+
+            h4 {
+                font-size: 4rem;
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+
+                li {
+                    border-right: 2px solid $accent;
+                    padding: 0 20px;
+
+                    a {
+                        color: $second;
+                        transition: 0.2s;
+
+                        &:hover {
+                            color: $primary;
+                        }
+
+                        &:focus {
+                            outline: 3px dotted $accent;
+                            outline-offset: 7px;
+                        }
+                    }
+
+                    &:last-of-type {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -348,7 +348,7 @@ img {
 .header h1 {
   font-size: 10rem;
   padding: 20px;
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid white;
 }
 
 .header h2 {
@@ -391,7 +391,6 @@ img {
 .skills {
   font-size: 2rem;
   margin: 20px 60px;
-  color: white;
   text-align: center;
 }
 
@@ -407,7 +406,8 @@ img {
       grid-template-rows: 1fr;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  padding: 100px 0;
+  padding: 100px;
+  grid-gap: 20px;
 }
 
 .skills .flip-card {
@@ -463,4 +463,129 @@ img {
 .flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner {
   -webkit-transform: rotateX(180deg) translateZ(-20px);
           transform: rotateX(180deg) translateZ(-20px);
+}
+
+.portfolio {
+  color: white;
+}
+
+.portfolio h3 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.portfolio .portItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 50px;
+  height: 500px;
+  margin: 100px 0 0;
+}
+
+.portfolio .portItem figure img {
+  border-radius: 10px;
+}
+
+.portfolio .portItem .portText {
+  text-align: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 2rem;
+}
+
+.portfolio .portItem .portText h4 {
+  font-size: 4rem;
+}
+
+.portfolio .portItem .portText ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio .portItem .portText ul li {
+  border-right: 2px solid white;
+  padding: 0 20px;
+}
+
+.portfolio .portItem .portText ul li a {
+  color: #604f1c;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.portfolio .portItem .portText ul li a:hover {
+  color: #28123f;
+}
+
+.portfolio .portItem .portText ul li a:focus {
+  outline: 3px dotted white;
+  outline-offset: 7px;
+}
+
+.portfolio .portItem .portText ul li:last-of-type {
+  border-right: none;
+}
+
+.contact {
+  color: white;
+  padding: 170px 0 80px;
+}
+
+.contact h3 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  margin: 0px auto;
+  padding: 150px 0 80px;
+}
+
+.contact ul a {
+  font-size: 5rem;
+  color: white;
+  padding: 10px 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.contact ul a:hover, .contact ul a:focus {
+  background: white;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  background: #28123f;
+  color: #604f1c;
+  padding: 25px;
+}
+
+footer p {
+  font-size: 2rem;
 }
