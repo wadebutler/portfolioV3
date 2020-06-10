@@ -171,7 +171,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 html {
-  font-size: 55%;
+  font-size: 50%;
   line-height: 25px;
   letter-spacing: 1px;
   scroll-behavior: smooth;
@@ -589,7 +589,7 @@ p {
 
 .portfolio h3 {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .portfolio .portItem {
