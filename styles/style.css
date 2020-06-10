@@ -262,6 +262,7 @@ p {
   border: none;
   border-radius: 10px;
   padding: 10px;
+  z-index: 2;
 }
 
 .navbar .hamMenu .line {
@@ -270,6 +271,7 @@ p {
   background: #604f1c;
   -webkit-transition: 0.8s;
   transition: 0.8s;
+  z-index: 3;
 }
 
 .navbar .hamMenu .change1 {
@@ -405,7 +407,7 @@ p {
 .about {
   font-size: 2rem;
   color: white;
-  padding: 100px 0 200px;
+  padding: 100px 0 100px;
 }
 
 .about h3 {
@@ -463,6 +465,7 @@ p {
 .skills h3 {
   text-align: center;
   font-size: 5rem;
+  margin-bottom: 20px;
 }
 
 .skills ul {
@@ -470,18 +473,14 @@ p {
   display: grid;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  padding: 100px;
-  grid-gap: 20px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px 100px;
 }
 
 @media (max-width: 950px) {
   .skills {
     margin: 20px 0;
-  }
-  .skills ul {
-    grid-gap: 0;
   }
 }
 
@@ -510,14 +509,13 @@ p {
     padding: 100px 0px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-gap: 20px;
   }
 }
 
 .skills .flip-card {
   background-color: transparent;
-  width: 200px;
-  height: 125px;
+  width: 125px;
+  height: 100px;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   margin: 10px auto;

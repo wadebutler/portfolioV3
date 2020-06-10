@@ -7,22 +7,18 @@
     h3 {
         text-align: center;
         font-size: 5rem;
+        margin-bottom: 20px;
     }
 
     ul {
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 100px;
-        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 20px 100px;
     }
 
     @media (max-width: 950px) {
         margin: 20px 0;
-
-        ul {
-            grid-gap: 0;
-        }
     }
 
     @media (max-width: 850px) {
@@ -48,14 +44,13 @@
         ul {
             padding: 100px 0px;
             grid-template-columns: 1fr;
-            grid-gap: 20px;
         }
     }
 
     .flip-card {
         background-color: transparent;
-        width: 200px;
-        height: 125px;
+        width: 125px;
+        height: 100px;
         perspective: 1000px;
         margin: 10px auto;
 
